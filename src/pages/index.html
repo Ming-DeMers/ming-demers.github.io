@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css" />
+</head>
+
+<body>
+  <h1>Hello World!</h1>
+  <p>I'm Ming DeMers, and this is my website.</p>
+  <ul>
+    <li>Resume</li>
+    <li>Projects</li>
+    <li>Photography</li>
+    <li>Social Media (git, linkedin, ig)</li>
+    <li>Contact</li>
+
+
+  </ul>
+
+  <script>
+    $('body').terminal({
+      hello: function (what) {
+        this.echo('Hello, ' + what +
+          '. Wellcome to this terminal.');
+      }
+    }, {
+      greetings: 'Hello World!'
+    });
+  </script>
+
+</body>
+
+</html>
